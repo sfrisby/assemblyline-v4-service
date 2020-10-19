@@ -18,6 +18,7 @@ log = logging.getLogger('assemblyline.service.result')
 Classification = forge.get_classification()
 SERVICE_ATTRIBUTES = get_service_attributes()
 
+
 class BODY_FORMAT(Enum):
     TEXT = 0
     MEMORY_DUMP = 1
@@ -27,7 +28,6 @@ class BODY_FORMAT(Enum):
     KEY_VALUE = 5
     PROCESS_TREE = 6
     TABLE = 7
-
 
 class InvalidHeuristicException(Exception):
     pass
